@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash & Shivani – Mangal Parinay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── SEAL INTRO ── -->
+  <div id="envelope-screen">
+    <div class="env-bg"></div>
+    <p class="seal-title">You're Invited</p>
+    <button id="open-btn" aria-label="Open invitation">
+      <span class="seal-circle">
+        <span class="seal-heart">♥</span>
+        <span class="seal-label">TAP TO OPEN</span>
+        <span class="seal-ring"></span>
+      </span>
+    </button>
+    <p class="seal-hint">tap the seal to open</p>
+  </div>
+
+  <!-- ── MAIN INVITATION ── -->
+  <main id="invitation" class="hidden">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-floral hero-floral--tl"></div>
+      <div class="hero-floral hero-floral--br"></div>
+      <div class="hero-content">
+        <p class="pre-title">MANGAL PARINAY</p>
+        <h1 class="names">Akash <span class="amp">&amp;</span> Shivani</h1>
+        <p class="subtitle">Request the honour of your presence</p>
+        <div class="scroll-hint">
+          <span>SCROLL</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO TEXT -->
+    <section class="intro section">
+      <div class="divider-floral">❧</div>
+      <p class="intro-text">
+        With hearts full of love and joy, we warmly invite you to share in the
+        celebration of our union. Your presence would mean the world to us as we begin this
+        beautiful journey together.
+      </p>
+      <div class="divider-floral">❧</div>
+    </section>
+
+    <!-- SCRATCH CARD -->
+    <section class="scratch-section section">
+      <h2 class="section-title">Scratch to Reveal</h2>
+      <div class="scratch-card-wrap">
+        <canvas id="scratch-canvas" width="300" height="180"></canvas>
+        <div class="scratch-reveal">
+          <p class="scratch-line1">You're Invited!</p>
+          <p class="scratch-line2">26 June 2026</p>
+          <p class="scratch-line3">Friday · 1:10 PM</p>
+        </div>
+      </div>
+      <p class="scratch-hint">Scratch the card above to reveal your invite details</p>
+    </section>
+
+
+
+    <!-- COUNTDOWN -->
+    <section class="countdown section">
+      <h2 class="section-title">Counting Down to Forever</h2>
+      <div class="countdown-grid">
+        <div class="cd-block"><span id="cd-days">00</span><label>DAYS</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cd-hours">00</span><label>HOURS</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cd-mins">00</span><label>MINUTES</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cd-secs">00</span><label>SECONDS</label></div>
+      </div>
+    </section>
+
+    <!-- PROGRAM TIMELINE -->
+    <section class="timeline section">
+      <h2 class="section-title">Program Timeline</h2>
+      <div class="event-boxes">
+        <div class="event-box">
+          <div class="event-icon">🌼</div>
+          <h3>Sugandhi Utane (Haldi)</h3>
+          <p>25 Jun 2026, Thursday</p>
+          <span>11:30 AM</span>
+        </div>
+        <div class="event-box">
+          <div class="event-icon">💍</div>
+          <h3>Mangal Parinay (Wedding)</h3>
+          <p>26 Jun 2026, Friday</p>
+          <span>1:10 PM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE -->
+    <section class="venue section">
+      <h2 class="section-title">Venue</h2>
+      <div class="venue-card">
+        <div class="venue-icon">🏛️</div>
+        <h3>Rajstan Bhavan</h3>
+        <p>Shindhi Basti, Raver Road, Burhanpur</p>
+        <a href="https://maps.app.goo.gl/L56Y6VJR71FQHdsn9" target="_blank" rel="noopener" class="map-btn">
+          View on Google Maps
+        </a>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- GIFTS -->
+    <section class="gifts section">
+      <div class="gifts-card">
+        <div class="gifts-divider">
+          <span class="gifts-line"></span>
+          <span class="gifts-heart">♥</span>
+          <span class="gifts-line"></span>
+        </div>
+        <p>Your love, blessings, and presence are the greatest gifts we could ever ask for.</p>
+      </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-floral">🌸 🌿 🌸</div>
+      <p class="footer-couple">Akash &amp; Shivani</p>
+      <p class="footer-msg">Shejole Parivar · 📞 9923672869</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
