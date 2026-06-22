@@ -371,7 +371,7 @@ body {
 .countdown {
   background: linear-gradient(135deg, #2d1f1f 0%, #3d2b2b 100%);
   max-width: 100%;
-  padding: 72px 24px;
+  padding: 72px 8px;
   color: var(--cream);
 }
 
@@ -381,67 +381,45 @@ body {
 
 .countdown-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.cd-row {
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 0;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0 4px;
 }
 
 .cd-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  min-width: 80px;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
 }
 
 .cd-block span {
   font-family: var(--font-serif);
-  font-size: clamp(2.8rem, 12vw, 4rem);
+  font-size: clamp(1.6rem, 6.5vw, 4rem);
   font-weight: 300;
   color: var(--cream);
   line-height: 1;
 }
 
 .cd-block label {
-  font-size: clamp(.5rem, 2vw, .6rem);
-  letter-spacing: .2em;
+  font-size: clamp(.38rem, 1.4vw, .6rem);
+  letter-spacing: .12em;
   color: var(--gold);
 }
 
 .cd-sep {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 8vw, 3rem);
+  font-size: clamp(1.2rem, 4.5vw, 3rem);
   color: var(--gold);
   opacity: .6;
   margin-bottom: 20px;
   flex-shrink: 0;
-}
-
-/* desktop: single row */
-@media (min-width: 520px) {
-  .countdown-grid {
-    flex-direction: row;
-    gap: 12px;
-  }
-  .cd-row {
-    gap: 12px;
-  }
-  /* add : between rows on desktop */
-  .cd-row:first-child::after {
-    content: ':';
-    font-family: var(--font-serif);
-    font-size: 3rem;
-    color: var(--gold);
-    opacity: .6;
-    margin-bottom: 20px;
-  }
+  padding: 0 1px;
 }
 
 /* ─────────────────────────────────────────
